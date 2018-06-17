@@ -46,6 +46,19 @@ public class Array {
 
     }
 
+    public void insertionSort() {
+        for(int out = 1; out < this.nElems; ++out) {
+            long temp = this.a[out];
+
+            int in;
+            for(in = out; in > 0 && this.a[in - 1] >= temp; --in) {
+                this.a[in] = this.a[in - 1];
+            }
+
+            this.a[in] = temp;
+        }
+
+    }
     private void swap(int var1, int var2) {
         long var3 = this.a[var1];
         this.a[var1] = this.a[var2];

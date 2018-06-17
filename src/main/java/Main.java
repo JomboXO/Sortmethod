@@ -14,7 +14,9 @@ public class Main {
         var2.insert(33L);
         var2.display();
         //var2.bubbleSort();
-        var2.selectionSort();
+        //var2.selectionSort();
+        var2.insertionSort();
+
         var2.display();
     }
 }
